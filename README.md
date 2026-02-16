@@ -1,49 +1,14 @@
-# Prototypes Repository
+# GitHub Pages site files
 
-This repository contains multiple prototype projects. Some are ready for GitHub Pages, others require different hosting.
+Place your static site files (HTML, CSS, JS, assets) inside this `docs/` folder.
 
-## 📱 Projects Overview
+How to publish:
 
-### Web-Ready Projects (Deploy to GitHub Pages)
-- **Core_Protocal_Website** - Info page about Core Protocol game
-- **Java_script** - JavaScript/Java testing project
-- **Coolmathgames** - Cool Math games project
-- **Messaging_system** - Messaging platform (frontend)
+1. Commit and push the repository to GitHub.
+2. In the repository on GitHub, go to Settings → Pages.
+3. Under "Build and deployment", set the source to the `main` branch (or your default branch) and the `/docs` folder.
+4. Save — your site will be available at `https://<your-username>.github.io/<repo-name>/` after a short build.
 
-### Local/Server-Only Projects
-- **B0057TER.INC** - Python project
-- **Recator_Core_Game** - Python game project
-- **C sharp testing** - C# project
-- **Stuff** - Python utilities
-
-## 🚀 Quick Start
-
-See [GITHUB_PAGES_SETUP.md](GITHUB_PAGES_SETUP.md) for detailed deployment instructions.
-
-### Deploy a Web Project
-
-1. Push this repository to GitHub
-2. Go to **Settings → Pages**
-3. Enable GitHub Pages
-4. Your sites will be available at:
-   - `https://username.github.io/core-protocal-website/`
-   - `https://username.github.io/java_script/`
-   - etc.
-
-## 📝 Requirements
-
-- Git
-- GitHub account
-- Web browser (for testing)
-
-## 🔧 Local Testing
-
-```bash
-# Python 3
-python -m http.server 8000
-# Visit http://localhost:8000
-```
-
-## 📖 More Info
-
-Check individual project README files for specific instructions.
+Notes:
+- If you already have an `index.html` in `Java_script/`, copy it into this folder along with any assets it needs.
+- If you want automatic deployment from other branches, consider using a GitHub Action to push built files into `gh-pages`.
